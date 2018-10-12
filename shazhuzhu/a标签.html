@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>a标签</title>
+    <base target="_blank">
+    <!--base标签：是用来专门统一指定当前网页中所有超链接（a标签）需要如何打开-->
+    <!--base标签中target属性有两种：
+                                      _blank 用于新的选项卡跳转即建立新的界面跳转-->
+                               <!--_self  用于当前选项卡跳转即不建立新的界面跳转-->
+    <!--假链接 格式 1 # 会自动跳转到网页顶部-->
+               <!--2 javascript： 不会自动跳转到网页顶部-->
+    <!--a标签中也有target属性 如果a标签中和base标签中同时设置了target属性 按照a标签来执行-->
+</head>
+<body>
+<a href="https://map.baidu.com/" target="_self  ">糯米</a>
+<a href="http://news.baidu.com/"   >新闻</a>
+<a href="https://zhidao.baidu.com/">知道</a>
+<a href="https://map.baidu.com/" >地图</a>
+<a href="https://map.baidu.com/" >地图</a>
+<br>
+<br>
+<br>
+<br>
+<a href="#">假链接 会自动跳转到顶部</a>
+<a href="javascript：">假链接 不会自动跳转到顶部</a>
+
+
+</body>
+</html>

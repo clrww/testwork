@@ -2,9 +2,96 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title></title>
+    <title>10-13老王第一课</title>
+    <style>
+        .button{
+            border-radius: 20px;
+            background-color: white;
+            border: 2px solid darkseagreen;
+            color: red;
+            padding: 15px 32px;
+            text-align: center;
+            display: inline-block;
+            font-size: 16px;
+            margin: 4px 2px;
+            cursor: pointer;
+            transition-duration: 0.4s;
+        }
+        .button:hover{
+            background-color: green;
+            color: black;
+        }
+
+        .button2{
+
+            border-radius: 40%;
+            background-color: red;
+            border: none;
+            color: wheat;
+            padding: 15px 32px;
+            text-align: center;
+            display: inline-block;
+            font-size: 16px;
+            margin: 4px 2px;
+            cursor: pointer;
+            box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+        ;
+        }
+        .button3{
+            border-radius: 40px;
+            background-color: aqua;
+            border: none;
+            color: wheat;
+            padding: 15px 32px;
+            text-align: center;
+            display: inline-block;
+            font-size: 16px;
+            margin: 4px 2px;
+            cursor: pointer;
+        }
+        .button3:hover{
+                box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+            }
+        .button4{
+            background-color: yellow;
+            border-radius: 20px;
+            border: 2px solid darkseagreen;
+            color: black;
+            padding: 15px 32px;
+            text-align: center;
+            display: inline-block;
+            font-size: 16px;
+            margin: 4px 2px;
+            cursor: pointer;
+        }
+        .disabled{
+            opacity: 0.6;
+            cursor: not-allowed;
+
+        }
+
+    </style>
+
+
+    <script>
+        function f() {
+            alert("这是一张中秋节图片")
+
+        }
+
+
+    </script>
 </head>
+
 <body>
-11111111111111
+ <h>中秋节</h>
+ <br>
+
+ <img src="img/01.jpg" height="300" onclick="f()">
+ <br>
+<button class="button" onclick="f1()">yellow</button>
+ <button class="button2" >阴影按钮</button>
+ <button class="button3" >鼠标悬停后出现阴影</button>
+<button class="button4"> 禁用按钮</button>
 </body>
 </html>

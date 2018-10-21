@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        .mydiv{
+            width: 200px;
+            height: 200px;
+            position: absolute;
+            border: 1px solid red;
+            background-color: red;
+            /*margin-left: 50%;*/
+            /*margin-top: 50%;*/
+            left: 45%;
+            top: 45%;
+
+        }
+        .mydiv1{
+            border-style: solid;
+            border-color: red;
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            left: 50%;
+            /*top: 50%;*/
+        }
+    </style>
+<script>
+    function gaibian() {
+        document.getElementById("xi").style.borderRadius="50%";
+        document.getElementById("xi").style.backgroundColor="blue";
+
+    }
+</script>
+</head>
+<body>
+<div class="mydiv" id="xi" onclick="gaibian()"></div>
+<!--<div class="mydiv1"></div>-->
+
+
+</body>
+</html>

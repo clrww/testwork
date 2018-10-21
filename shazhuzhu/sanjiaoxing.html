@@ -1,25 +1,17 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<!DOCTYPE html>
 <html>
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>Insert title here</title>
-
-<style type="text/css">
-#div1{
-border-style:solid;;
-border-color: green transparent red transparent;
-border-width:20px; 
-border-bottom-width: 0px;
-width: 0px;
-}
-
-
-
-</style>
+        <script>
+        function f5() {
+            document.getElementById("demo5").innerHTML="改变后的字体";
+        }
+        </script>
 </head>
+
 <body>
-<div id="div1"></div>
-<div class="div1"> </div>
-<button class="button2" >阴影按钮</button>
+
+<p id="demo5">想要改变这里的文字</p>
+<button type="button" onclick="f5()">点击这里</button>
+
 </body>
 </html>

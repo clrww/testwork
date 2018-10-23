@@ -3,8 +3,82 @@
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
+    <script type="text/javascript">
+
+
+
+        window.onload=function(){
+            alert("jj")
+        }
+
+    </script>
+
+    <script type="text/javascript">
+        function  sub(){
+            $.ajax({
+                type:"GET",
+                url:"/Ajaxex/testServlet",
+                data:{username:$("#name").val()},
+                dataType:JSON,
+                statusCode: {404: function() {
+                        alert('page not found'); }
+                },
+                success:function(data,textStatus){
+                    $("#sp").html(data);
+                },
+                error:{
+                    alert{"buxing"};
+                }
+            });
+        }
+    </script>
+
+
+
+    <style>
+        #clr{
+             width: 100px;
+             height: 100px;
+             background-color: yellow;
+             border: 1px solid black;
+            float: left;
+            text-align: center;
+            line-height: 100px;
+            position: absolute;
+            left: 50%;
+            top: 50%;
+
+
+         }
+        #clr:hover{
+            transform:rotate(9deg) scale(0.85,0.90) translate(0px,-30px) skew(-9deg,0deg);
+
+        }
+        #clr p{
+            color: white;
+        }
+        .xixi p{
+            color: purple;
+        }
+        #ww{
+            width: 100px;
+            height: 100px;
+            background-color: red;
+            border: 1px solid black;
+            float: left;
+        }
+p{
+    float: left;
+}
+    </style>
 </head>
 <body>
+<div id="clr" class="xixi">
+<p>hjhj</p>
+</div>
+<!--<div id="ww">-->
 
+<!--</div>-->
+<!--<p>ssssjhhkhkhkhkhkhkhkhkhkhkhkh</p>-->
 </body>
 </html>
